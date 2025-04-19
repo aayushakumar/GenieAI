@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modern SaaS UI inspired by Superhuman and Fathom</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {},
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <div class="min-h-screen bg-black text-white">
+      <!-- Hero Section -->
+      <div class="relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-purple-500/10 via-transparent to-blue-500/10"></div>
+        
+        <nav class="relative z-10 container mx-auto px-6 py-8">
+          <div class="flex items-center justify-between">
+            <div class="flex items-center space-x-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6">
+                <path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/>
+                <path d="M5 3v4"/>
+                <path d="M19 17v4"/>
+                <path d="M3 5h4"/>
+                <path d="M17 19h4"/>
+              </svg>
+              <span class="text-xl font-semibold">Genie</span>
+            </div>
+            <div class="hidden md:flex items-center space-x-8">
+              <a href="#features" class="text-gray-300 hover:text-white transition-colors">Features</a>
+              <a href="#security" class="text-gray-300 hover:text-white transition-colors">Security</a>
+              <a href="#pricing" class="text-gray-300 hover:text-white transition-colors">Pricing</a>
+              <button class="bg-white text-black px-4 py-2 rounded-full font-medium hover:bg-gray-100 transition-colors">
+                Get Started
+              </button>
+            </div>
+          </div>
+        </nav>
+
+        <main class="relative">
+          <div class="container mx-auto px-6 pt-20 pb-32 text-center">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-white via-purple-200 to-blue-200 text-transparent bg-clip-text">
+              AI Forensics, Reimagined
+            </h1>
+            <p class="text-xl text-gray-400 max-w-2xl mx-auto mb-12">
+              Detect scams, analyze AI-generated content, and protect your privacy with military-grade forensics technology.
+            </p>
+            <div class="flex flex-col md:flex-row items-center justify-center gap-4">
+              <button class="group bg-white text-black px-8 py-4 rounded-full font-medium hover:bg-gray-100 transition-all flex items-center">
+                Try Genie Free
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform">
+                  <path d="M5 12h14"/>
+                  <path d="m12 5 7 7-7 7"/>
+                </svg>
+              </button>
+              <div class="flex items-center space-x-2 text-gray-400">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4">
+                  <path d="M15 6v12a3 3 0 1 0 3-3H6a3 3 0 1 0 3 3V6a3 3 0 1 0-3 3h12a3 3 0 1 0-3-3"/>
+                </svg>
+                <span>Press</span>
+                <kbd class="px-2 py-1 bg-gray-800 rounded text-sm">⌘</kbd>
+                <span>+</span>
+                <kbd class="px-2 py-1 bg-gray-800 rounded text-sm">K</kbd>
+                <span>to start</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Features Grid -->
+          <div class="container mx-auto px-6 py-24 border-t border-gray-800">
+            <div class="grid md:grid-cols-3 gap-8">
+              <div class="p-6 rounded-2xl bg-gradient-to-br from-gray-900 to-gray-800">
+                <div class="bg-purple-500/10 p-3 rounded-lg w-fit mb-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-purple-400">
+                    <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                  </svg>
+                </div>
+                <h3 class="text-xl font-semibold mb-2">Instant Analysis</h3>
+                <p class="text-gray-400">
+                  Get real-time forensics analysis of any text or image in milliseconds.
+                </p>
+              </div>
+              
+              <div class="p-6 rounded-2xl bg-gradient-to-br from-gray-900 to-gray-800">
+                <div class="bg-blue-500/10 p-3 rounded-lg w-fit mb-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-blue-400">
+                    <path d="M15 6v12a3 3 0 1 0 3-3H6a3 3 0 1 0 3 3V6a3 3 0 1 0-3 3h12a3 3 0 1 0-3-3"/>
+                  </svg>
+                </div>
+                <h3 class="text-xl font-semibold mb-2">Keyboard First</h3>
+                <p class="text-gray-400">
+                  Lightning-fast workflows with powerful keyboard shortcuts.
+                </p>
+              </div>
+
+              <div class="p-6 rounded-2xl bg-gradient-to-br from-gray-900 to-gray-800">
+                <div class="bg-green-500/10 p-3 rounded-lg w-fit mb-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-green-400">
+                    <path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/>
+                    <path d="M5 3v4"/>
+                    <path d="M19 17v4"/>
+                    <path d="M3 5h4"/>
+                    <path d="M17 19h4"/>
+                  </svg>
+                </div>
+                <h3 class="text-xl font-semibold mb-2">AI Detection</h3>
+                <p class="text-gray-400">
+                  Advanced AI detection with 99.9% accuracy and zero false positives.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Social Proof -->
+          <div class="container mx-auto px-6 py-24 border-t border-gray-800">
+            <div class="text-center">
+              <p class="text-gray-400 mb-8">Trusted by security teams at</p>
+              <div class="flex flex-wrap justify-center items-center gap-12 opacity-50">
+                <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=128&h=32&fit=crop&auto=format" alt="Company logo" class="h-8" />
+                <img src="https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?w=128&h=32&fit=crop&auto=format" alt="Company logo" class="h-8" />
+                <img src="https://images.unsplash.com/photo-1611162618071-b39a2ec055fb?w=128&h=32&fit=crop&auto=format" alt="Company logo" class="h-8" />
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <script>
+      // Command palette keyboard shortcut
+      document.addEventListener('keydown', (e) => {
+        if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
+          e.preventDefault();
+          alert('Command palette coming soon!');
+        }
+      });
+    </script>
+  </body>
+</html>
